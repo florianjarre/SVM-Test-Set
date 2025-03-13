@@ -1,9 +1,9 @@
 Matlab Test Set for Support Vector Machines with Gaussian Kernel
 
 
-Generating test data,  a matrix X whose colums are the data points
+Generating test data,  
 
-                       and a column vector z with associated labels
+a matrix X whose colums are the data points and a column vector z with associated labels
                        
 via
 
