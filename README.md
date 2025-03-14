@@ -23,9 +23,10 @@ or
    
 Sub-programs used are
 
-kkt_norm.m
-pilar.m
+kkt_norm.m,
+pilar.m,
 findbeta.m
 
 testhalfmoon.m tests the computed classification of the halfmoon set
+
 plotcurrent.m plots the checkerborad classification
