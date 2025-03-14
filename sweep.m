@@ -310,7 +310,7 @@ if nIN > 0
 end
 
 % Do a last Newton step to reduce the final error (copied from above)
-if refinelast %-----------irefine (mostly copied from above)
+if refinelast %--------refinelast (mostly copied from above)
 if nIN > 0            % TYPICAL CASE: Newton with inactive coordinates
 AIN = H(INACT,INACT); % Solve A*s = b,  zI'*s = 0
 tmpt = 1000*eps*sum(diag(AIN));
@@ -355,14 +355,13 @@ x = max(x,0);           % in case of rounding errors
 x = min(x,C);           % in case of rounding errors
 qnew = (0.5*x.'*H-c.')*x;
 end % of TYPICAL CASE: Newton with inactive coordinates
-end %-----------irefine
-
 
 kkt_norm
 if dispkktnorm
-    disp('KKT violations: bounds, constraint, Lagrange gradient')
+    disp('KKT after refinement: bounds, constraint, Lagrange gradient')
     disp([kviol1,kviol2,kviol3,kviol4])
 end
+end %--------refinelast
 
 outfile.outerit = outerit;      % number of cycles
 outfile.overallit = overallit;  % number of up-steps + number of down-steps 
