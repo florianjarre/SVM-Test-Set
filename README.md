@@ -2,6 +2,7 @@ Matlab Test Set for Support Vector Machines with Gaussian Kernel
 
 Generating test data,  
 a matrix X whose colums are the data points and a column vector z with associated labels via
+
    [X,z,x1low,x1high,x2low,x2high] = chkbd(nnn,m);   
 or
    [X,z] = halfmoon(d,delta,rho,n);
