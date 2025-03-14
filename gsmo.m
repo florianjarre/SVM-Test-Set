@@ -140,6 +140,7 @@ end % end OUTER ITERATIONS
 
 kkt_norm
 if dispkktnorm
+    disp('KKT violations: bounds, constraint, Lagrange gradient')
     disp([kviol1,kviol2,kviol3,kviol4])
 end
 
