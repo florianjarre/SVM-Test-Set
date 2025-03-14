@@ -282,8 +282,9 @@ overallit = overallit+upit;
 
 end % end OUTER ITERATIONS
 
+kkt_norm
 if dispkktnorm
-    kkt_norm
+    disp('KKT violations: bounds, constraint, Lagrange gradient')
     disp([kviol1,kviol2,kviol3,kviol4])
 end
 
@@ -357,8 +358,9 @@ end % of TYPICAL CASE: Newton with inactive coordinates
 end %-----------irefine
 
 
+kkt_norm
 if dispkktnorm
-    kkt_norm
+    disp('KKT violations: bounds, constraint, Lagrange gradient')
     disp([kviol1,kviol2,kviol3,kviol4])
 end
 
